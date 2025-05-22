@@ -4,13 +4,71 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css" />
-    <title>Vite App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Belgrano&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet">
+    <title>Artzie</title>
   </head>
   <body>
-    <h1>Hola mundo</h1>
-    <p>Esto es una prueba de funcionamiento</p>
-    <div id="app"></div>
+    <div class="container">
+      <section class="hero">
+        <div class="hero-left">
+          <header class="header-left">
+            <nav>
+              <a href="#">
+                <img src="/img/nft-logo.svg" alt="Enterprise Logo" />
+              </a>
+              <ul>
+                <li><a href="#">Market</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Galery</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+            </nav>
+            <section class="hero__text">
+              <h1 class="hero__title">The largest NFT market with excepcional items on the bid
+                <img src="img/nft-lazo.svg" alt="lazo">
+              </h1>
+              <p class="hero__subtitle">Collectible and non-fungible tokens in your hands</p>
+              <div class="hero__buttons">
+                <a href="#" class="button">Explore</a>
+                <a href="#" class="link">Learn more 
+                  <img src="/img/arrow-right.svg" alt="Arrow right"/>
+                </a>
+            </section>
+            <h3 class="article__img">Featured Artwork</h3>
+            <section class="projects">
+              <img src="img/project-1-img.png" width="200" alt="Project 1">
+              <img src="img/project-2-img.png" width="200" alt="Project 2">
+            </section>
+          </header> 
+        </div>
+        <div class="hero-right">
+            <nav class="header-right">
+              <ul>
+                <li><a href="#">Sign up</a></li>
+                <li class="button__nav"><a href="#">Sign in</a></li>
+              </ul>
+            </nav>
+            <div class="hero__img">
+              <img class="nft-image" src="img/nft-image.png" width="200" alt="NFT">
+            </div>
+            <div class="cajon">
+              <div class="info-nft">
+                <img src="img/nft-owner.png" width="80" alt="Owner">
+                <p class="author">@samanthaw</p>
+                <p class="cuantia">Current Bid</p>
+                <h3 class="obra">Artwork #01</h3>
+                <h3 class="prize">1.00 ETH</h3>
+              </div>
+              <hr>
+              <div class="links">
+                <a href="#" class="bid">Bid Now</a>
+                <a href="#">View Artwork</a>
+            </div>
+            </div>
+          </div>
+      </section>
+    </div>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

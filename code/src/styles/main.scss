@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/* @charset "UTF-8";
 
 // 1. Vendors
 @use 'vendors/normalize';
@@ -21,4 +21,230 @@
 
 // 6. Themes
 @use 'themes/default';
+ */
+
+
+ :root{
+    --color-primary: #FA504D;
+ }
+ body {
+    font-family: 'Poppins' serif;
+    margin: 0;
+   padding: 0;
+ }
+
+ section.hero {
+    display: flex;
+ }
+
+ div.hero-left {
+   max-width: 60%;
+    flex: 1;
+    padding: 30px 80px;
+    
+    header.header-left nav{
+        display: flex;
+         align-items: center;
+        ul {
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+            gap: 10px;
+            li {
+                margin: 0 10px;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    &:hover {
+                        color: var(--color-primary);
+                    }
+                }
+            }
+        }
+    }
+      section.hero__text{
+         h1 {
+               font-size: 2.5rem;
+               font-weight: 500;
+               margin: 0;
+               margin-top: 50px;
+               max-width: 75%;
+               line-height: 1.6;
+               position: relative;
+               img{
+                  position: absolute;
+                  left: 60px;
+                  top: 14px;
+                  width: 125px;
+                }
+         }
+         p {
+               font-size: 1.2rem;
+               margin: 0;
+               margin-top: 20px;
+               margin-bottom: 20px;
+               color: gray;
+               position: relative;
+               &::before{
+                  content: '';
+                  height: 4px;
+                  width: 55px;
+                  position: absolute;
+                  background-color: var(--color-primary);
+                  left: 0;
+                  top: 17px;
+                }
+         }
+         div.hero__buttons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            a.button {
+               display: inline-block;
+               width: 100px;
+               text-align: center;
+               text-decoration: none;
+               background-color: var(--color-primary);
+               color: white;
+               padding: 10px 20px;
+               font-weight: 400;
+               transition: all 0.3s ease-in-out;
+               &:hover {
+                   background-color: #FF4C4F;
+                   transform: translateY(-2px);
+                   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+               }
+            }
+            a.link{
+               display: flex;
+               align-items: center;
+               color: #2D2F38;
+            }
+            }
+         }
+   h3.article__tittle{
+      font-size: 1.5rem;
+      font-weight: 400;
+   } 
+   section.projects {
+      display: flex;
+      gap: 20px;
+      img {
+         padding: 4px;
+         border: #2D2F38 1px solid;
+      }
+   }
+}
+
+div.hero-right {
+    flex: 1;
+    background-color: #2D2F38;
+      padding: 20px 30px;
+
+    nav.header-right ul{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      list-style: none;
+      gap: 10px;
+      li {
+         margin: 0 10px;
+         a {
+            text-decoration: none;
+            color: white;
+            &:hover {
+               color: var(--color-primary);
+            }
+         }
+      }
+      li.button__nav a{
+         display: inline-block;
+         width: 100px;
+         text-align: center;
+         text-decoration: none;
+         background-color: var(--color-primary);
+         color: white;
+         padding: 10px 20px;
+         font-weight: 400;
+         transition: all 0.3s ease-in-out;
+         &:hover {
+            background-color: #ffffff;
+            color: var(--color-primary);
+         }
+      }
+    }
+    div.hero__img {
+      display: flex;
+      justify-content: center;
+      padding-right: 40px;
+      img {
+         width: 100%;
+         height: auto;
+         max-width: 400px;
+      }
+    }
+    div.cajon {
+      background-color: #ffffff;
+      width: 80%;
+      max-width: 500px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      transform: translate(-20px , -30px);
+      
+      
+
+    }
+    div.info-nft{
+      display: grid;
+      grid-template-areas: 'img text1 text3'
+                           'img text2 text4';
+      align-items: center;
+      grid-template-columns: 15% 55% 30%;
+      grid-template-rows: 20px 20px;
+      padding: 10px;
+
+      img{
+         grid-area: img;
+         width: 50px;
+      }
+    }
+    hr {
+      width: 80%;
+    }
+    div.links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      
+      a {
+         text-decoration: none;
+         color: var(--color-primary);
+         font-weight: 400;
+         margin-bottom: 10px;
+         &:hover {
+            color: #2D2F38;
+         }
+      }
+      a.bid{
+         display: inline-block;
+         width: 100px;
+         text-align: center;
+         text-decoration: none;
+         background-color: var(--color-primary);
+         color: white;
+         padding: 10px 20px;
+         font-weight: 400;
+         transition: all 0.3s ease-in-out;
+         &:hover {
+            background-color: #2D2F38;
+            color: var(--color-primary);
+         }
+       }
+    }
+    
+}
+
+ 
 
